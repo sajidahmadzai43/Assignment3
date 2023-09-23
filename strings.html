@@ -1,0 +1,40 @@
+<!-- Sajid Ahmadzai Assignment No. 3-->
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>String Manipulation and Validation</title>
+    <link rel="stylesheet" href="styles.css">
+    <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@400;700&display=swap" rel="stylesheet"> <!-- Importing custom font -->
+    <script defer src="script.js"></script>
+</head>
+
+<body>
+    <header>
+        <h1>String Manipulation and Validation</h1>
+    </header>
+
+    <main>
+        <section class="form-section">
+            <form onsubmit="validateForm(); return false;">
+                <input type="text" id="firstName" placeholder="First Name" required>
+                <input type="text" id="lastName" placeholder="Last Name" required>
+                <input type="text" id="zipCode" placeholder="Zip Code" required>
+                <button type="submit">Submit</button>
+            </form>
+        </section>
+
+        <section id="message-section">
+            <div id="warning" class="message" style="display:none;"></div>
+            <div id="secretMessage" class="message" style="display:none;">The secret message is: <strong>Palindromes are fun!</strong></div>
+        </section>
+    </main>
+
+    <footer>
+        <p>Made with love by SAJID AHMADZAI</p>
+    </footer>
+</body>
+
+</html>
